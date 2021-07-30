@@ -19,7 +19,8 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "prisma:apply": "prisma format && prisma db push --preview-feature"
+    "prisma:apply": "prisma format && prisma db push --preview-feature",
+    "prisma:seed": "prisma db seed --preview-feature"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.5",
@@ -77,6 +78,6 @@
     "testEnvironment": "node"
   },
   "prisma": {
-    "schema": "./src/prisma/schema.prisma"
+    "schema": "./src/core/prisma/schema.prisma"
   }
 }

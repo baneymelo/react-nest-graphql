@@ -9,4 +9,4 @@ services:
       POSTGRES_USER: prisma
       POSTGRES_PASSWORD: prisma
     volumes:
-      - ./src/prisma/tmp/postgres:/var/lib/postgresql/data
+      - ./src/core/prisma/tmp/postgres:/var/lib/postgresql/data
